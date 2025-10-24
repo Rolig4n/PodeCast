@@ -35,6 +35,15 @@ export default function RootLayout() {
           ),
         }} 
       />
+      <Tabs.Screen 
+        name="test" 
+        options={{ 
+          title: 'Teste',
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons name={focused ? 'hammer' : 'hammer-outline'} color={color} size={24}/>
+          ),
+        }} 
+      />
     </Tabs>
   );
 }
