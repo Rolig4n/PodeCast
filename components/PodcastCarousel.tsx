@@ -27,22 +27,22 @@ const DATA = [
     {
         id: '1',
         nome: 'Fabrica de Filmes',
-        embed: <iframe data-testid="embed-iframe" style={styles.podcast_box} src="https://open.spotify.com/embed/show/3dAI13iP588c9GT1UoelDB?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>,
+        embed: <iframe data-testid="embed-iframe" style={styles.podcast_box} src="https://open.spotify.com/embed/show/3dAI13iP588c9GT1UoelDB?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>,
     },
     {
         id: '2',
         nome: 'Frango Fino',
-        embed: <iframe data-testid="embed-iframe" style={styles.podcast_box} src="https://open.spotify.com/embed/show/6eMairLQRdKPPKVbcoxSIV?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>,
+        embed: <iframe data-testid="embed-iframe" style={styles.podcast_box} src="https://open.spotify.com/embed/show/6eMairLQRdKPPKVbcoxSIV?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>,
     },
     {
         id: '3',
         nome: 'Reinaldo Jaqueline',
-        embed: <iframe data-testid="embed-iframe" style={styles.podcast_box} src="https://open.spotify.com/embed/show/2MsTGRXkgN5k0gBBRDV4ok?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>,
+        embed: <iframe data-testid="embed-iframe" style={styles.podcast_box} src="https://open.spotify.com/embed/show/2MsTGRXkgN5k0gBBRDV4ok?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>,
     },
     {
         id: '4',
         nome: 'Vortex',
-        embed: <iframe data-testid="embed-iframe" style={styles.podcast_box} src="https://open.spotify.com/embed/show/0zLUAET9wfl7hz23eXVtCd?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>,
+        embed: <iframe data-testid="embed-iframe" style={styles.podcast_box} src="https://open.spotify.com/embed/show/0zLUAET9wfl7hz23eXVtCd?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>,
     },
 ];
 

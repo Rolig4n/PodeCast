@@ -17,32 +17,32 @@ export default function RootLayout() {
       }}
     > 
 
-      <Tabs.Screen 
+      <Tabs.Screen
         name="index" 
-        options={{ 
+        options={{
           title: 'Início',
           tabBarIcon: ({ color, focused }) => (
             <Ionicons name={focused ? 'home-sharp' : 'home-outline'} color={color} size={24} />
           ),
-        }} 
+        }}
       />
-      <Tabs.Screen 
+      <Tabs.Screen
         name="about" 
-        options={{ 
+        options={{
           title: 'Sobre',
           tabBarIcon: ({ color, focused }) => (
             <Ionicons name={focused ? 'information-circle' : 'information-circle-outline'} color={color} size={24}/>
           ),
-        }} 
+        }}
       />
-      <Tabs.Screen 
-        name="test" 
-        options={{ 
-          title: 'Teste',
+      <Tabs.Screen
+        name="podcasts"
+        options={{
+          title: 'Ultimos Episódios',
           tabBarIcon: ({ color, focused }) => (
             <Ionicons name={focused ? 'hammer' : 'hammer-outline'} color={color} size={24}/>
           ),
-        }} 
+        }}
       />
     </Tabs>
   );
