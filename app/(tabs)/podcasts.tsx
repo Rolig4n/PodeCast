@@ -33,6 +33,7 @@ function Index() {
 				width={window.width}
 				style={{
 					width: window.width,
+					backgroundColor: '#25292e',
 				}}
 				mode="parallax"
 				modeConfig={{

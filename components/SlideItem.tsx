@@ -11,14 +11,6 @@ import {
 import type { AnimatedProps } from "react-native-reanimated";
 import Animated from "react-native-reanimated";
 
-// const PURPLE_IMAGES = [
-//   require("@/assets/images/slide-images/purple-0.jpg"),
-//   require("@/assets/images/slide-images/purple-1.jpg"),
-//   require("@/assets/images/slide-images/purple-2.jpg"),
-//   require("@/assets/images/slide-images/purple-3.jpg"),
-//   require("@/assets/images/slide-images/purple-4.jpg"),
-// ]
-
 const PODCASTS = [
   {
     nome: 'Fabrica de Filmes',
@@ -58,11 +50,6 @@ export const SlideItem: React.FC<Props> = (props) => {
     ...animatedViewProps
   } = props;
 
-  // const source = useMemo(
-  //   () => props.source || PURPLE_IMAGES[index % PURPLE_IMAGES.length],
-  //   [index, props.source]
-  // );
-
   const source = useMemo(
     () => props.source || PODCASTS[index % PODCASTS.length],
     [index, props.source]
@@ -71,11 +58,6 @@ export const SlideItem: React.FC<Props> = (props) => {
   return (
     <Animated.View testID={testID} style={{ flex: 1 }} {...animatedViewProps}>
       {!colorFill && (
-        // <Animated.Image
-        //   style={[style, styles.container, rounded && { borderRadius: 15 }]}
-        //   source={source}
-        //   resizeMode="cover"
-        // />
         <Text style={[style, styles.container, rounded && { borderRadius: 15 }]}>
           {source.embed}
         </Text>
@@ -83,7 +65,6 @@ export const SlideItem: React.FC<Props> = (props) => {
       {colorFill && <View style={[styles.colorFill, rounded && { borderRadius: 15 }]} />}
       <View style={styles.overlay}>
         <View style={styles.overlayTextContainer}>
-          {/* <Text style={styles.overlayText}>{index}</Text> */}
           <Text style={styles.overlayText}>{source.nome}</Text>
         </View>
       </View>
@@ -96,13 +77,12 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "100%",
     backgroundColor: '#25292e',
+    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
   },
   overlay: {
     position: "absolute",
-    // top: 0,
-    left: 0,
-    // right: 0,
-    bottom: 0,
+    left: 1,
+    bottom: 1,
     justifyContent: "center",
     alignItems: "center",
   },
@@ -122,9 +102,7 @@ const styles = StyleSheet.create({
   },
   colorFill: {
     position: "absolute",
-    // top: 0,
     left: 0,
-    // right: 0,
     bottom: 0,
     backgroundColor: "gray",
   },
